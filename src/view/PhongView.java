@@ -40,8 +40,10 @@ public class PhongView extends JFrame {
         pnlInput.add(txtMaLoai);
 
         pnlInput.add(new JLabel("Trạng thái:"));
-        txtTrangThai = new JTextField();
-        pnlInput.add(txtTrangThai);
+        cboTrangThai = new JComboBox<>(new String[]{
+            "Trống", "Có khách", "Đang dọn..."
+        });
+        pnlInput.add(cboTrangThai);
 
         add(pnlInput, BorderLayout.NORTH);
 
