@@ -7,49 +7,24 @@ public class TaiKhoan {
     private String VaiTro;
     private String MaNV;
 
-    public TaiKhoan() {
+    public TaiKhoan() {}
+
+    public TaiKhoan(String MaTK, String TenDangNhap, String MatKhau, String VaiTro, String MaNV) {
+        this.MaTK = MaTK;
+        this.TenDangNhap = TenDangNhap;
+        this.MatKhau = MatKhau;
+        this.VaiTro = VaiTro;
+        this.MaNV = MaNV;
     }
 
-    public TaiKhoan(String maTK, String tenDangNhap, String matKhau, String vaiTro, String maNV) {
-        this.MaTK = maTK;
-        this.TenDangNhap = tenDangNhap;
-        this.MatKhau = matKhau;
-        this.VaiTro = vaiTro;
-        this.MaNV = maNV;
-    }
-
-    public String getMaTK() { 
-        return MaTK;
-     }
-    public void setMaTK(String maTK) {
-         this.MaTK = maTK;
-         }
-
-    public String getTenDangNhap() {
-         return TenDangNhap;
-         }
-    public void setTenDangNhap(String tenDangNhap) {
-         this.TenDangNhap = tenDangNhap; 
-        }
-
-    public String getMatKhau() { 
-        return MatKhau;
-     }
-    public void setMatKhau(String matKhau) { 
-        this.MatKhau = matKhau;
-     }
-
-    public String getVaiTro() {
-         return VaiTro;
-         }
-    public void setVaiTro(String vaiTro) {
-         this.VaiTro = vaiTro;
-         }
-
-    public String getMaNV() {
-         return MaNV;
-         }
-    public void setMaNV(String maNV) {
-         this.MaNV = maNV;
-         }
+    public String getMaTK() { return MaTK; }
+    public void setMaTK(String MaTK) { this.MaTK = MaTK; }
+    public String getTenDangNhap() { return TenDangNhap; }
+    public void setTenDangNhap(String TenDangNhap) { this.TenDangNhap = TenDangNhap; }
+    public String getMatKhau() { return MatKhau; }
+    public void setMatKhau(String MatKhau) { this.MatKhau = MatKhau; }
+    public String getVaiTro() { return VaiTro; }
+    public void setVaiTro(String VaiTro) { this.VaiTro = VaiTro; }
+    public String getMaNV() { return MaNV; }
+    public void setMaNV(String MaNV) { this.MaNV = MaNV; }
 }
